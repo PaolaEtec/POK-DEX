@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedéx</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script async src="./js/script.js"></script>
+</head>
+<body onload="getAllPokemon()">
+    <div class="container">
+        <header>
+            <div id="navbar">
+                <div id="logo">
+                    <img src="./img/pokemon.png"  alt="logo-Pokémon">
+                </div>
+                <div id="contentNav">
+                    <div id="search-box">
+                        <input type="text">
+                        <button>Search</button>
+                    </div>
+                    <div class="Capturar">
+                        <img src="./img/pokebola.png">
+                        <span class="quantity">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    
+    <button id="infoButton" onclick="abrirModal()"></button>
+    <div id="modal" class="hide">
+        <div class="modal_img">
+            <button class="close" onclick="fecharModal()">X</button>
+            <div id="modalPok"></div>
+            <div id="infoPok">
+                <span id="pokeName"></span>
+                <span id="PokeId"></span>
+            </div>
+            <div id="pokeInfo">
+                <img id="pokeGif">
+                <div id="info">
+                    <div id="alt&pes">
+                        <span id="pokeAlt"></span>
+                        <span id="pokePeso"></span>
+                    </div>
+                    <h4 id="type"></h4>
+                </div>
+            </div>
+            <h5 id="text"></h5>
+        </div>
+    </div>
+        
+        
+    
+    <div class="card">
+        <h1>Capturados</h1>
+            <ul id="listCard"></ul>
+            <div class="checkOut">
+                <div class="Liberar">Liberar todos</div>
+                <div class = "Close">Close</div>
+            </div>
+    </div>
+
+
+    <main>
+        <ul id="listaPokemon">
+            
+
+        </ul>
+    </main>
+</body>
+</html>
